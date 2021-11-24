@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}{{ 'header.welcome'|trans }}{% endblock %}</title>
+        {% block stylesheets %}
+            {# 'app' must match the first argument to addEntry() in webpack.config.js #}
+            {{ encore_entry_link_tags('app') }}
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            {# <link rel="stylesheet" href="{{ asset('build/vendors-node_modules_bootstrap_dist_css_bootstrap_min_css.css') }}">#}
+        {% endblock %}
+    </head>
+
+    <body class="bg-light">
+
+    {{ include('base-navbar.html.twig') }}
+
+    <main role="main" class="container">
+        {# {{ add_begin_html_tag(_self, 'content') }} #}
+        <div class="my-3 p-3 bg-white rounded box-shadow">
+
+            {% block body %}
+
+            {% endblock %}
+
+        </div>
+       {#  {{ add_end_html_tag(_self, 'content') }}#}
+    </main>
+
+    {% block javascripts %}
+        {{ encore_entry_script_tags('app') }}
+
+        {% if is_granted('ROLE_USER') %}
+            <script>
+                function fetchNotificationCount(){
+                    fetch(
+                        '{{ path('notification_unread') }}',
+                        { 'credentials' : 'include' } //to send browser cookies
+                    ).then(function (response){
+                        response.json().then(function (json){
+                            document.getElementById('notification-count').innerText = json.count;
+                            setTimeout(fetchNotificationCount, 5000);
+                        });
+                    }).catch(function (reason){
+
+                    });
+                }
+                fetchNotificationCount();
+            </script>
+        {% endif %}
+    {% endblock %}
+    </body>
+</html>

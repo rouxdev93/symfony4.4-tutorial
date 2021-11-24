@@ -1,0 +1,37 @@
+login: Login
+logout: Log out
+login.username: Username
+login.password: Password
+repeat.password: Repeated password
+add.new.post: Add new post
+notifications: Notifications
+micro.post.app: Micro Post App
+custom.error.title.404: Custom error TWIG
+custom.error.header.404: Very bad thing happened
+access.to.platform: Access to platform
+email.button.link.not.working: If that doesn't work, copy and paste the following link in your browser
+email.confirm.account: Confirm Account
+email.register.first.message: We're thrilled to have you here! Get ready to dive into your new account.
+email.register.welcome.message: Welcome to the app!
+email.register.hello.user: Hello %userFullName% ! You've registered into the app!
+currently.not.following: You currently do not follow anyone, you might find these users interesting
+recent.updates: Recent updates
+micro.post.edit: Edit post
+micro.post.delete: Remove post
+follow.user: Follow
+unfollow.user: UnFollow
+followers: '{0}No Followers|{1}Follower|]1,Inf[ %count% Followers'
+following: '{0}Following no one|]0,Inf[ %count% Following'
+dont.have.notifications: You have not notifications
+post: post
+likes.your: likes your
+ok.button: OK
+mark.as.read: Mark all as read
+unread.notifications: Unread notifications
+message.profile.confirmation.congrat: Congratulations!!
+message.profile.confirmation: Your account is confirmed! You can now sign in
+message.profile.confirmation.error: Something went wrong. Please check your e-mail.
+here: here
+header.welcome: Welcome!
+sign.up: Sign up
+agree.terms.service: 'I agree to the terms of service'

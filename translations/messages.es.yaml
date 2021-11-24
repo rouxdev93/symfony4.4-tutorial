@@ -1,0 +1,37 @@
+login: Inicio de sesión
+logout: Cerrar Sesión
+login.username: Nombre de usuario
+login.password: Contraseña
+repeat.password: Contraseña
+add.new.post: Añadir un nuevo mensaje
+notifications: Notificaciones
+micro.post.app: Aplicación de Micro Posts
+custom.error.title.404: Error personalizado TWIG
+custom.error.header.404: Algo muy malo ha sucedido
+access.to.platform: Acceso a la plataforma
+email.button.link.not.working: Si no funciona, copie y pegue el siguiente enlace en su navegador
+email.confirm.account: Confirmar cuenta
+email.register.first.message: Estamos encantados de tenerte aquí. Prepárate para sumergirte en tu nueva cuenta.
+email.register.welcome.message: ¡Bienvenido a la aplicación!
+email.register.hello.user: Hola '%userFullName%' ! Te has registrado en la aplicación.
+currently.not.following: Actualmente no sigues a nadie, puede que estos usuarios te interesen
+recent.updates: Actualizaciones recientes
+micro.post.edit: Editar mensaje
+micro.post.delete: Eliminar mensaje
+follow.user: Seguir
+unfollow.user: Dejar de seguir
+followers: '{0}No tiene seguidores|{1}Seguidor|]1,Inf[ %count% Seguidores'
+following: '{0}No sigue a nadie|]0,Inf[ %count% Siguiendo'
+dont.have.notifications: No tienes nuevas notificaciones
+post: mensaje
+likes.your: le gusta
+ok.button: OK
+mark.as.read: Marcar todos como leídos
+unread.notifications: Notificaciones sin leer
+message.profile.confirmation.congrat: ¡Felicidades!
+message.profile.confirmation: ¡Su cuenta está confirmada! Ya puede iniciar sesión
+message.profile.confirmation.error: Algo salió mal. Por favor, compruebe su correo electrónico.
+here: aquí
+header.welcome: ¡Bienvenido!
+sign.up: Regístrarse
+agree.terms.service: Acepto las condiciones de servicio

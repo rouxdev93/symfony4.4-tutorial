@@ -1,0 +1,10 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    {% if user %}
+        <h5>{{ 'message.profile.confirmation.congrat'|trans }}</h5>
+        <p>{{ 'message.profile.confirmation'|trans }} <a href="{{ path('security_login') }}"> {{ 'here'|trans }}</a></p>
+    {% else %}
+        {{ 'message.profile.confirmation.error'|trans }}
+    {% endif %}
+{% endblock %}

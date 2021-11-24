@@ -1,0 +1,7 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ 'custom.error.title.404'|trans }}{% endblock %}
+{% block body %}
+    <h1>{{ 'custom.error.header.404' |trans }}</h1>
+    <p>{{ status_text }}, {{ status_code }}</p>
+{% endblock %}

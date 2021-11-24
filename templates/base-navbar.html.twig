@@ -1,0 +1,43 @@
+<nav class="navbar navbar-dark navbar-expand-md sticky-top bg-dark p-0">
+    <a class="navbar-brand col-sm-3 col-md-2 mr-0"
+       href="{{ path('micro_post_index') }}">{{ 'micro.post.app'|trans }}</a>
+    <div class="w-100 order-1 order-md-0">
+        <ul class="navbar-nav px-3">
+            {% if is_granted('ROLE_USER') %}
+                <li class="nav-item text-nowrap">
+                    <a class="nav-link" href="{{ path('micro_post_add') }}">
+                        {{ 'add.new.post'|trans }}
+                    </a>
+                </li>
+            {% endif %}
+        </ul>
+    </div>
+
+    <div class="order-2 order-md-1">
+        <ul class="navbar-nav px-3">
+            {% if is_granted('ROLE_USER') %}
+                <li class="nav-item text-nowrap border-right border-secondary">
+                    <a class="nav-link" href="{{ path('notification_all') }}">
+                        {{ 'notifications'|trans }}
+                        <span class="badge badge-light" id="notification-count">
+                            <i class="fa fa-circle fa-circle-o-notch fa-spin"></i>
+                        </span>
+                    </a>
+                </li>
+                <li class="nav-item text-nowrap">
+                    <a class="nav-link"
+                       href="#">{{ app.user.fullName }}</a>
+                </li>
+                <li class="nav-item text-nowrap">
+                    <a class="nav-link"
+                       href="{{ logout_path() }}">{{ 'logout'|trans }}</a>
+                </li>
+            {% else %}
+                <li class="nav-item text-nowrap">
+                    <a class="nav-link"
+                       href="{{ path('security_login') }}">{{ 'login'|trans }}</a>
+                </li>
+            {% endif %}
+        </ul>
+    </div>
+</nav>
