@@ -8,7 +8,8 @@ This course has been useful to learn the differences between Symfony version 3 a
 - [x] I create a fully working, real world website in Symfony
 - [x] I create forms, save, edit and validate data
 - [x] I create and deal with complicated Database relations
-- [x] Send e-mails and understand Symfony Event system
+- [x] Handling assets (JavaScript, CSS) using Symfony Encore (and Webpack)
+- [x] Send e-mails with Symfony Mailer component and Symfony Event system
 - [x] Secure the application and restrict access to certain parts of application to specific users
 - [x] Create SQL queries in Doctrine, Doctrine Table Inheritance and Lifycycle callbacks
 - [x] Translating the application into many different languages
