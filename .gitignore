@@ -6,7 +6,7 @@
 /.env.local
 /.env.local.php
 /.env.*.local
-/config/packages/dev/*
+/config/packages/dev/
 /config/secrets/prod/prod.decrypt.private.php
 /public/bundles/
 /var/
