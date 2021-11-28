@@ -66,8 +66,11 @@ jobs:
               name: Composer install
               command: composer.phar install --no-dev #--optimize-autoloader
           - run:
-              name: Clear cache
+              name: Cache clear
               command: php bin/console cache:clear --env=prod --no interaction
+          - run:
+              name: Cache warmup
+              command: php bin/console cache:warmup --env=prod --no interaction
           - run:
               name: Yarn
               command: yarn install && yarn run encore production
